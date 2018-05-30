@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: MyString
+  schedule: MyString
+  priest: MyString
+
+two:
+  day: MyString
+  schedule: MyString
+  priest: MyString
