@@ -2,7 +2,7 @@ require 'date'
 class Api::MassesController < ApplicationController
 before_action :set_mass, only: [:show, :update, :destroy]
 
-skip_before_action :doorkeeper_authorize!, only: :index
+skip_before_action :doorkeeper_authorize!, only: [:index, :getMassesByDate]
   # GET /masses
   def index
     @masses = Mass.all
