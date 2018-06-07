@@ -1,6 +1,7 @@
 class Api::ChurchesController < ApplicationController
 before_action :set_church, only: [:show, :update, :destroy]
 
+skip_before_action :doorkeeper_authorize!, only: :index
   # GET /churches
   def index
     @churches = Church.all

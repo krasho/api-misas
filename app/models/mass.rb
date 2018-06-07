@@ -1,3 +1,3 @@
 class Mass < ApplicationRecord
-    belongs_to :curch
+    belongs_to :church
 end

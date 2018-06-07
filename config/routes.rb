@@ -19,6 +19,8 @@ Rails.application.routes.draw do
     resources :churches
     resources :masses
 
+    get "masses/bychurch/:church_id", to: "masses#getMassesByChurch", as: "masses_bychurch"
+    get "masses/bydate/:year/:month/:day", to: "masses#getMassesByDate", as: "masses_bydate"   
   end
         
 end
