@@ -8,7 +8,7 @@ class CreateMasses < ActiveRecord::Migration[5.2]
       t.timestamps
 
     end
-    add_index :masses, :church, unique: true
+    
     add_foreign_key :masses, :churches, column: :church_id
     
   end
