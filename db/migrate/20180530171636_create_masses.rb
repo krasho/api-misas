@@ -7,9 +7,6 @@ class CreateMasses < ActiveRecord::Migration[5.2]
       t.references :church, null: false
       t.timestamps
 
-    end
-    
-    add_foreign_key :masses, :churches, column: :church_id
-    
+    end      
   end
 end
