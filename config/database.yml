@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: misas_backend_production
-  username: misas_backend
+  database: masses
+  username: masses_user
   password: <%= ENV['MISAS_BACKEND_DATABASE_PASSWORD'] %>
