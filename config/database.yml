@@ -51,4 +51,4 @@ production:
   <<: *default
   database: masses
   username: masses_user
-  password: <%= ENV["MISAS_BACKEND_DATABASE_PASSWORD"] %>
+  password: <%= ENV['MISAS_BACKEND_DATABASE_PASSWORD'] %>
